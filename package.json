@@ -1,0 +1,34 @@
+{
+  "name": "aio-ts",
+  "version": "0.0.1",
+  "description": "A Typescript bot framework",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "mocha test/**/*.test.js",
+    "lint": "gulp lint",
+    "build": "gulp build && tsc"
+  },
+  "author": "Kelvin Fichter",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kfichter/aio-ts"
+  },
+  "dependencies": {
+    "@types/request-promise-native": "^1.0.14",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-tslint": "^8.1.3",
+    "request": "^2.85.0",
+    "request-promise-native": "^1.0.5",
+    "typescript": "^2.7.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^5.0.4",
+    "seedrandom": "^2.4.3",
+    "tslint": "^5.9.1"
+  }
+}
