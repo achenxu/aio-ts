@@ -1,4 +1,5 @@
 import { IProxy } from './proxy';
+import { CaptchaManager } from './captcha-manager';
 
 export interface ITask {
   id: string;
@@ -15,9 +16,11 @@ export interface IBot {
 
 export class Bot implements IBot {
   task: ITask;
+  captchaManager: CaptchaManager;
 
   constructor(task: ITask) {
     this.task = task;
+    this.captchaManager = new CaptchaManager();
   }
 
   async run(): Promise<any> {

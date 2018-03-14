@@ -1,7 +1,7 @@
 {
   "name": "aio-ts",
   "version": "0.0.1",
-  "description": "A Typescript bot framework",
+  "description": "A TypeScript bot framework",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@types/request-promise-native": "^1.0.14",
+    "ez-harvest": "0.0.3",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.4.0",
     "gulp-tslint": "^8.1.3",
