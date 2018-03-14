@@ -25,13 +25,13 @@ Once you've installed `aio-ts`, you can start writing bots. Here's a sample bot 
 
 import { ApiWrapper } from 'aio-ts';
 
-class SampleApiWrapper extends ApiWrapper {
+export class SampleApiWrapper extends ApiWrapper {
     async addProductToCart(productId: string, captchaToken: string): Promise<any> {
         return this.post('/product/add', {
             body: {
                 productId: productId,
                 captchaToken: captchaToken
-            }
+            },
             json: true
         });
     }
